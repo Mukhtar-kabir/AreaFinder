@@ -1,0 +1,375 @@
+.review .back {
+  background-color: #dfe7ff;
+  padding: 1rem;
+}
+
+.review .input {
+    position: absolute;
+    top: 1rem;
+    z-index: 999;
+    padding: 0.5rem 0.5rem;
+    left: 15rem;
+    background-color: #fff;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.review .input input {
+    width: 100%;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.review .leave-review {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background: none;
+}
+
+.review .leave-review .leave {
+  background: none;
+}
+
+.review .leave-review .leave p {
+    font-size: 24px;
+    margin-bottom: 0.3rem;
+    background: none;
+}
+
+.review .leave-review .leave span {
+    font-size: 16px;
+}
+
+.review .leave-review .buttons {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+.review .leave-review .buttons span .icon {
+  background: none;
+}
+
+.review .leave-review .buttons button {
+    background-color: #3366FF;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.review .leave-review .buttons span {
+    border: 1px solid #3366FF;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    color: #3366FF;
+    cursor: pointer;
+}
+
+.review  .mini-buttons {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+}
+
+.review  .mini-buttons button {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 0.2rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.review  .mini-buttons .button {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d3045d7; 
+    z-index: 1000;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  
+    z-index: 1001;  
+  }
+
+  .modal-content {
+    background: none;
+  }
+
+  .modal-content h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 24px;
+    font-weight: 500;
+    background: none;
+  }
+
+  .modal-content p {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    background: none;
+  }
+
+  .modal-content .dropdown .select {
+    width: 100%;
+    background-color: #F3F7FE;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .modal-content .dropdown {
+    background-color: #F3F7FE;
+  }
+
+  .modal-content .dropdown .dropdown-content {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 0.8rem;
+    gap: 0.5rem;
+  }
+
+  .modal-content .dropdown .dropdown-content label {
+    background: none;
+  }
+
+  .modal-content p.rate {
+    font-size: 14px;
+    color: #1E1E1E;
+  }
+
+  .modal-content span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    margin-bottom: 0.5rem;
+  }
+
+  .modal-content .star {
+    color: gold;
+    background: none;
+  }
+
+  .modal-content textarea {
+    width: 100%;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    padding: 0.5rem;
+  }
+
+  .modal-content .check {
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+  }
+
+  .modal-content .check label {
+    background: none;
+    font-size: 0.8rem;
+    color: #484851;
+  }
+
+  .modal-content .two-button {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+
+  .modal-content .two-button button {
+    border: none;
+    width: 48%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .modal-content .two-button button:nth-child(1) {
+    background-color: #3366FF;
+    color: #fff;
+  }
+
+  .modal-content .two-button button:nth-child(2) {
+    color: #3366FF;
+    background: none;
+    border: 1px solid #587ef0;
+  }
+  
+  button.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+  }
+
+  .review .review-sections {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .review .review-sections .review-section {
+    margin-bottom: 2rem;
+    line-height: 0;
+  }
+
+  .review .review-sections .review-section img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .review .review-sections .review-section .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 0.5rem; */
+  }
+
+  .review .review-sections .review-section p {
+    font-size: 16px;
+    /* margin-bottom: 0.5rem; */
+    line-height: 1.8;
+    color: #18181B;
+  }
+
+  .review .review-sections .review-section .top .rating .icon {
+    color: gold;
+  }
+
+  .review .review-sections .review-section .top .image {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .review .review-sections .review-section .top .image h3 {
+    font-size: 14px;
+  }
+
+  .review .review-sections .review-section .top .image span {
+    font-size: 14px;
+  }
+
+  .review .review-sections .review-section .likes .like {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #0D2159;
+  }
+  
+@media (max-width: 900px) {
+  .review .input {
+    left: 50%;
+    right: 30%;
+    position: relative;
+    /* top: 3rem; */
+    width: 80%;
+    transform: translate(-50%, -50%);
+  }
+
+  .review .input .placeholder {
+    font-size: 0.5rem;
+  }
+
+  .review .leave-review {
+    display: block;
+  }
+
+  .review .leave-review .leave p {
+    font-size: 0.8rem;
+  }
+
+  .review .leave-review .leave span {
+    font-size: 0.7rem;
+  }
+
+  .review .leave-review .buttons button,
+  .review .leave-review .buttons span {
+    padding: 0.6rem 0.7rem;
+    font-size: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .review  .mini-buttons {
+    padding: 0.1rem;
+    display: none;
+  }
+
+  .modal-content h4 {
+    font-size: 1rem;
+  }
+
+  .modal-content p {
+    font-size: 0.8rem;
+  }
+
+  .modal-content .dropdown .dropdown-content {
+    font-size: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .modal-content p.rate {
+    font-size: 0.8rem;
+  }
+
+  .modal-content .star {
+    font-size: 0.8rem;
+  }
+
+  .modal-content .dropdown .select small {
+    font-size: 0.7rem;
+  }
+}

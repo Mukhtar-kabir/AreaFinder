@@ -1,0 +1,81 @@
+.nav {
+    width: 90%;
+    margin: auto;
+    font-family: sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fafafa;
+}
+
+.nav .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.nav .nav-container h1 {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.nav .nav-container span {
+    font-size: 7px;
+    background-color: #5050fc;
+    padding: 0.2rem 0.2rem;
+    color: #fafafa;
+    border-radius: 3px;
+}
+
+.nav .nav-container .welcome {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav .nav-container .welcome .welcomeMess {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav .nav-container .link {
+    text-decoration: none;
+    color: #000
+}
+
+.nav .nav-container .welcome p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #5050fc;
+    cursor: pointer;
+}
+
+.nav .nav-container .welcome img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .nav .nav-container .welcome p {
+        font-size: 0.7rem;
+    }
+
+    .nav .nav-container .welcome .welcomeMess {
+        gap: 0.5rem;
+    }
+
+    .nav .nav-container .welcome img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,228 @@
+.hero {
+    width: 90%;
+    margin: auto;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hero .hero-container {
+    width: 50%;
+    position: sticky;
+    top: 4rem;
+}
+
+ .icon {
+    background: none;
+}
+
+.hero .hero-container h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #1E1E1E;
+    margin-bottom: 0.8rem;
+}
+
+.hero .hero-container p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.05px;
+    color: #1E1E1E;
+    margin-bottom: 1rem;
+}
+
+.hero .hero-container .search {
+    background-color: #D4DCF1;
+    padding: 0.5rem;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .hero-container .search input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.hero .hero-container button {
+    background-color: #3366FF;
+    padding: 0.5rem 2rem;
+    color: #fafafa;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero .items {
+    width: 50%;
+    margin-left: 90px;
+    background-color: #FAFCFD;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.hero .items .item {
+    background-color: #ffff;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.hero .items::after, .hero .items::before {
+    content: "";
+    position: fixed;
+    right: 0;
+    height: 60px;
+    width: 50%;
+    z-index: 999;
+    background: linear-gradient(0deg, #fafafa, transparent);
+}
+
+.hero .items::before {
+    top: 3rem;
+    z-index: 999;
+    /* background: linear-gradient(90deg, #fff, transparent); */
+}
+.hero .items::after {
+    bottom: 0;
+    /* background: linear-gradient(90deg, #fff, transparent); */
+}
+
+.hero .items .item .image {
+    display: flex;
+    align-items: center;
+    background: none;
+    gap: 0.3rem;
+}
+
+.hero .items .item .rate h4 {
+    font-size: 0.9rem;
+}
+
+.hero .items .item .image img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero .items .item .image .name {
+    background: none;
+}
+
+.hero .items .item .image .name h3,
+.hero .items .item .image .name span {
+    background: none;
+}
+
+.hero .items .item .image .name h3 {
+    font-size: 0.7rem;
+}
+
+.hero .items .item .image .name span {
+    font-size: 0.7rem;
+}
+
+.hero .items .item .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    background: none;
+}
+
+.hero .items .item .flex .rate {
+    background: none;
+}
+
+.hero .items .item .flex .rate h4 {
+    background: none;
+}
+
+.hero .items .item .flex .rate .stars {
+    background: none;
+}
+
+.hero .items .item .flex .rate .stars .star {
+    background: none;
+}
+
+.hero .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.hero .items .item .likes {
+    display: flex;
+    align-items: center;
+    background: none;
+    gap: 2rem;
+}
+
+.hero .items .item .likes .network button {
+    border: none;
+    background-color: #fa9595;
+    padding: 0.2rem 0.8rem;
+    border-radius: 15px;
+}
+
+.hero .items .item .likes .like {
+    display: flex;
+    background: none;
+    gap: 0.3rem;
+}
+
+.hero .items .item .likes .like .icon {
+    background: none;
+}
+
+.hero .items .item .likes .like span {
+    background: none;
+}
+
+.hero .items .item p {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    background: none;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        display: block;
+    }
+
+    .hero .items::after, .hero .items::before {
+        width: 100%;
+    }
+
+    .hero .hero-container {
+        width: 100%;
+    }
+
+    .hero .hero-container h1 {
+        font-size: 2rem;
+    }
+
+    .hero .hero-container p  {
+        font-size: 0.8rem;
+    }
+
+    .hero .items {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero .items .item .likes {
+        justify-content: space-between;
+    }
+}
