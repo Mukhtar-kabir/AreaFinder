@@ -233,7 +233,7 @@ const Review = () => {
                         </span>
                     </div>
                 </div>
-                <button onClick={() => handleDeleteReview(index)}>Delete Review</button>
+                {/* <button onClick={() => handleDeleteReview(index)}>Delete Review</button> */}
             </div>
         ))
     )}
