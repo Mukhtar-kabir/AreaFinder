@@ -16,7 +16,6 @@ import { FaRegMessage } from "react-icons/fa6";
 import { useState, useEffect } from 'react';
 import { addReview } from '../../redux/areaFinderSlice';
 import { useDispatch } from 'react-redux';
-import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/lib/styles.css';
 import { ToastContainer, toast } from "react-toastify";
 
