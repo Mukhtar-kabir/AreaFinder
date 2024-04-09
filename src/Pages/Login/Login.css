@@ -35,6 +35,9 @@ span {
 
 .login .login-container .input .password {
     background-color: #FAFCFD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .login .login-container .input p {
