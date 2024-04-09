@@ -107,7 +107,7 @@ const Review = () => {
         </div>
 
         <div className="mini-buttons">
-            
+            <div className="buttonss">
             <button>Schools</button>
                         <button>Hospitals</button>
                         <button>Resort Park</button>
@@ -121,8 +121,8 @@ const Review = () => {
                         <button>Public Transport</button>
                         <button>Bus Station</button>
                         <button>Quiet</button>
+            </div>
                         <button className='button'><TfiAngleRight /></button>
-             
         </div>
         </div>
 
