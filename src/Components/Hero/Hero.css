@@ -223,6 +223,7 @@
 @media (max-width: 900px) {
     .hero {
         display: block;
+        padding: 1rem 1.5rem;
     }
 
     .hero .items::after, .hero .items::before {
