@@ -186,10 +186,12 @@
 
 .hero .items .item .likes .network button.water {
     background-color: #96adf3;
+    color: #ffff;
 }
 
 .hero .items .item .likes .network button.traffie {
     background-color: #f0b6b6;
+    color: #fff;
 }
 
 .hero .items .item .likes .network button.power {
@@ -234,6 +236,7 @@
         width: 100%;
         top: 0;
         z-index: 0;
+        position: relative;
     }
 
     .hero .hero-container h1 {
