@@ -15,8 +15,7 @@ import { MdDeleteForever } from "react-icons/md";
 import { FaRegMessage } from "react-icons/fa6";
 import { useState, useEffect } from 'react';
 import { addReview } from '../../redux/areaFinderSlice';
-import { useDispatch } from 'react-redux';
-import 'react-owl-carousel2/lib/styles.css';
+import { useDispatch } from 'react-redux';;
 import { ToastContainer, toast } from "react-toastify";
 
 const Review = () => {
