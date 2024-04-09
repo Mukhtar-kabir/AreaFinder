@@ -1,19 +1,19 @@
 .nav {
-    width: 90%;
+    width: 100%;
     margin: auto;
     font-family: sans-serif;
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: #fafafa;
+     
 }
 
 .nav .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
-    width: 100%;
+    padding: 1rem 5rem;
+    background-color: #FAFCFD;
 }
 
 .nav .nav-container h1 {
@@ -66,6 +66,9 @@
 }
 
 @media (max-width: 900px) {
+    .nav .nav-container {
+        padding: 1rem 1.5rem;
+    }
     .nav .nav-container .welcome p {
         font-size: 0.7rem;
     }

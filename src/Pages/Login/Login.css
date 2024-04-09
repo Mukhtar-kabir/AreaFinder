@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     min-height: 90vh;
+    background-color: #FAFCFD;
 }
 
 .login p {

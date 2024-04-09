@@ -5,6 +5,7 @@ import { CiStar } from "react-icons/ci";
 import { BsHandThumbsUp } from "react-icons/bs";
 import { BsHandThumbsDown } from "react-icons/bs";
 import { FaRegMessage } from "react-icons/fa6";
+import { TbStarFilled } from "react-icons/tb";
 
 function Hero() {
   return (
@@ -36,15 +37,15 @@ function Hero() {
             <div className="rate">
               <h4>Ikate, Lekki</h4>
               <div className="stars">
-                <CiStar className='star' />
-                <CiStar className='star' />
-                <CiStar className='star' />
-                <CiStar className='star' />
-                <CiStar className='star' />
+                <TbStarFilled className='star' />
+                <TbStarFilled className='star' />
+                <TbStarFilled className='star' />
+                <TbStarFilled className='star' />
+                <TbStarFilled className='star' />
               </div>
             </div>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima reprehenderit maiores sit, corrupti dolorum tempora veritatis eveniet debitis, voluptatem odit est rerum, accusantium omnis molestiae eius! Eum quo iusto quam.</p>
+          <p>There is no stable electricity. The roads are fairly good and there is a sense of community. The drainage system is poor and most residents litter their surroundings. There are several grocery stores and Supermarkets.</p>
 
           <div className="likes">
             <div className="like">
@@ -75,15 +76,15 @@ function Hero() {
             <div className="rate">
               <h4>Ikate, Lekki</h4>
               <div className="stars">
-                <CiStar className='star' />
-                <CiStar className='star' />
-                <CiStar className='star' />
-                <CiStar className='star' />
-                <CiStar className='star' />
+                <TbStarFilled className='star' />
+                <TbStarFilled className='star' />
+                <TbStarFilled className='star' />
+                <TbStarFilled className='star' />
+                <TbStarFilled className='star' />
               </div>
             </div>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima reprehenderit maiores sit, corrupti dolorum tempora veritatis eveniet debitis, voluptatem odit est rerum, accusantium omnis molestiae eius! Eum quo iusto quam.</p>
+                    <p>There is no stable electricity. The roads are fairly good and there is a sense of community. The drainage system is poor and most residents litter their surroundings. There are several grocery stores and Supermarkets.</p>
 
           <div className="likes">
             <div className="like">
@@ -96,7 +97,7 @@ function Hero() {
             </div>
 
             <div className="network">
-              <button>network</button>
+              <button className='power'>power</button>
             </div>
           </div>
         </div>
@@ -114,15 +115,15 @@ function Hero() {
             <div className="rate">
               <h4>Ikate, Lekki</h4>
               <div className="stars">
-                 <CiStar className='star' />
-                 <CiStar className='star' />
-                 <CiStar className='star' />
-                 <CiStar className='star' />
-                 <CiStar className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
               </div>
             </div>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima reprehenderit maiores sit, corrupti dolorum tempora veritatis eveniet debitis, voluptatem odit est rerum, accusantium omnis molestiae eius! Eum quo iusto quam.</p>
+                    <p>There is no stable electricity. The roads are fairly good and there is a sense of community. The drainage system is poor and most residents litter their surroundings. There are several grocery stores and Supermarkets.</p>
 
           <div className="likes">
             <div className="like">
@@ -135,7 +136,7 @@ function Hero() {
             </div>
 
             <div className="network">
-              <button>network</button>
+              <button className='water'>water</button>
             </div>
           </div>
         </div>
@@ -153,15 +154,15 @@ function Hero() {
             <div className="rate">
               <h4>Ikate, Lekki</h4>
               <div className="stars">
-                 <CiStar className='star' />
-                 <CiStar className='star' />
-                 <CiStar className='star' />
-                 <CiStar className='star' />
-                 <CiStar className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
               </div>
             </div>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima reprehenderit maiores sit, corrupti dolorum tempora veritatis eveniet debitis, voluptatem odit est rerum, accusantium omnis molestiae eius! Eum quo iusto quam.</p>
+                    <p>There is no stable electricity. The roads are fairly good and there is a sense of community. The drainage system is poor and most residents litter their surroundings. There are several grocery stores and Supermarkets.</p>
 
           <div className="likes">
             <div className="like">
@@ -174,7 +175,7 @@ function Hero() {
             </div>
 
             <div className="network">
-              <button>network</button>
+              <button className='traffie'>traffie</button>
             </div>
           </div>
         </div>
@@ -192,15 +193,15 @@ function Hero() {
             <div className="rate">
               <h4>Ikate, Lekki</h4>
               <div className="stars">
-                 <CiStar className='star' />
-                 <CiStar className='star' />
-                 <CiStar className='star' />
-                 <CiStar className='star' />
-                 <CiStar className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
               </div>
             </div>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima reprehenderit maiores sit, corrupti dolorum tempora veritatis eveniet debitis, voluptatem odit est rerum, accusantium omnis molestiae eius! Eum quo iusto quam.</p>
+                    <p>There is no stable electricity. The roads are fairly good and there is a sense of community. The drainage system is poor and most residents litter their surroundings. There are several grocery stores and Supermarkets.</p>
 
           <div className="likes">
             <div className="like">
@@ -213,7 +214,7 @@ function Hero() {
             </div>
 
             <div className="network">
-              <button>network</button>
+              <button className='power'>power</button>
             </div>
           </div>
         </div>
@@ -231,15 +232,15 @@ function Hero() {
             <div className="rate">
               <h4>Ikate, Lekki</h4>
               <div className="stars">
-                 <CiStar className='star' />
-                 <CiStar className='star' />
-                 <CiStar className='star' />
-                 <CiStar className='star' />
-                 <CiStar className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
+                 <TbStarFilled className='star' />
               </div>
             </div>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima reprehenderit maiores sit, corrupti dolorum tempora veritatis eveniet debitis, voluptatem odit est rerum, accusantium omnis molestiae eius! Eum quo iusto quam.</p>
+                    <p>There is no stable electricity. The roads are fairly good and there is a sense of community. The drainage system is poor and most residents litter their surroundings. There are several grocery stores and Supermarkets.</p>
 
           <div className="likes">
             <div className="like">
@@ -252,7 +253,7 @@ function Hero() {
             </div>
 
             <div className="network">
-              <button>network</button>
+              <button className='water'>water</button>
             </div>
           </div>
         </div>

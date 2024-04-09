@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     min-height: 100vh;
+    background-color: #FAFCFD
 }
 
 .hero .hero-container {
@@ -152,6 +153,17 @@
     background: none;
 }
 
+.hero .items .item .flex .rate .stars .star:nth-child(1),
+.hero .items .item .flex .rate .stars .star:nth-child(2),
+.hero .items .item .flex .rate .stars .star:nth-child(3) {
+    color: gold;
+}
+
+.hero .items .item .flex .rate .stars .star:nth-child(4),
+.hero .items .item .flex .rate .stars .star:nth-child(5) {
+    color: #D4DCF1;
+}
+
 .hero .items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -170,6 +182,18 @@
     background-color: #fa9595;
     padding: 0.2rem 0.8rem;
     border-radius: 15px;
+}
+
+.hero .items .item .likes .network button.water {
+    background-color: #96adf3;
+}
+
+.hero .items .item .likes .network button.traffie {
+    background-color: #f0b6b6;
+}
+
+.hero .items .item .likes .network button.power {
+    background-color: #D4DCF1;
 }
 
 .hero .items .item .likes .like {
