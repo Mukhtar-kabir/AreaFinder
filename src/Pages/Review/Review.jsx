@@ -11,10 +11,14 @@ import { TbStarFilled } from "react-icons/tb";
 import { IoIosArrowDown } from "react-icons/io";
 import { BsHandThumbsUp } from "react-icons/bs";
 import { BsHandThumbsDown } from "react-icons/bs";
+import { MdDeleteForever } from "react-icons/md";
 import { FaRegMessage } from "react-icons/fa6";
 import { useState, useEffect } from 'react';
 import { addReview } from '../../redux/areaFinderSlice';
 import { useDispatch } from 'react-redux';
+import OwlCarousel from 'react-owl-carousel2';
+import 'react-owl-carousel2/lib/styles.css';
+import { ToastContainer, toast } from "react-toastify";
 
 const Review = () => {
     const userInfo = useSelector((state) => state.areaFinder.userInfo);
@@ -47,16 +51,23 @@ const Review = () => {
             rating: 4.0,
             content: reviewText,
             likes: {
-              thumbsUp: 0,
-              thumbsDown: 0,
-              messages: 0
+              thumbsUp: 1224,
+              thumbsDown: 4,
+              messages: 24
             }
         };
         // dispatch(addReview(newReview));
+        toast.success('Review added successfully');
         setReviews([...reviews, newReview]);
         setReviewText('');
         toggleModal();
       };
+
+      const handleDeleteReview = (index) => {
+        const updatedReviews = [...reviews];
+        updatedReviews.splice(index, 1); // Remove the review at the specified index
+        setReviews(updatedReviews); // Update the reviews state
+    };
 
       const formatDate = (date) => {
         const today = new Date();
@@ -98,20 +109,22 @@ const Review = () => {
         </div>
 
         <div className="mini-buttons">
+            
             <button>Schools</button>
-            <button>Hospitals</button>
-            <button>Resort Park</button>
-            <button>Shopping Malls</button>
-            <button>Airport</button>
-            <button>Train Station</button>
-            <button>Nightlife</button>
-            <button>Public Wifi</button>
-            <button>Parking Lot</button>
-            <button>Security</button>
-            <button>Public Transport</button>
-            <button>Bus Station</button>
-            <button>Quiet</button>
-            <button className='button'><TfiAngleRight /></button>
+                        <button>Hospitals</button>
+                        <button>Resort Park</button>
+                        <button>Shopping Malls</button>
+                        <button>Airport</button>
+                        <button>Train Station</button>
+                        <button>Nightlife</button>
+                        <button>Public Wifi</button>
+                        <button>Parking Lot</button>
+                        <button>Security</button>
+                        <button>Public Transport</button>
+                        <button>Bus Station</button>
+                        <button>Quiet</button>
+                        <button className='button'><TfiAngleRight /></button>
+             
         </div>
         </div>
 
@@ -186,40 +199,60 @@ const Review = () => {
 
         <div className="review-sections">
             <div className="review-section">
-            {reviews.map((review, index) => (
-                <div className="review-section" key={index}>
-                    <div className="top">
-                        <div className="image">
-                            <img src={userInfo.image} alt="" />
-                            <h3>{userInfo.name}.</h3>
-                            <span>{formatDate(review.date)}</span>
-                        </div>
-                        <div className="rating">
-                            <TbStarFilled className='icon' />
-                            <span>{review.rating}</span>
-                        </div>
+            {reviews.length === 0 ? (
+                <div className='noReview'>
+                    <MdDeleteForever className='delete' />
+                    <p>No Reviews yet!</p>
+                </div>
+    ) : (
+        reviews.map((review, index) => (
+            <div className="review-section" key={index}>
+                <div className="top">
+                    <div className="image">
+                        <img src={userInfo.image} alt="" />
+                        <h3>{userInfo.name}.</h3>
+                        <span>{formatDate(review.date)}</span>
                     </div>
-                    <p>{review.content}</p>
-                    <div className="likes">
-                        <div className="like">
-                            <span>
-                                <BsHandThumbsUp />
-                                {review.likes?.thumbsUp}
-                            </span>
-                            <span>
-                                <BsHandThumbsDown />
-                                {review.likes.thumbsDown}
-                            </span>
-                            <span>
-                                <FaRegMessage />
-                                {review.likes.messages}
-                            </span>
-                        </div>
+                    <div className="rating">
+                        <TbStarFilled className='icon' />
+                        <span>{review.rating}</span>
                     </div>
                 </div>
-            ))}
+                <p>{review.content}</p>
+                <div className="likes">
+                    <div className="like">
+                        <span>
+                            <BsHandThumbsUp />
+                            {review.likes?.thumbsUp}
+                        </span>
+                        <span>
+                            <BsHandThumbsDown />
+                            {review.likes.thumbsDown}
+                        </span>
+                        <span>
+                            <FaRegMessage />
+                            {review.likes.messages}
+                        </span>
+                    </div>
+                </div>
+                <button onClick={() => handleDeleteReview(index)}>Delete Review</button>
+            </div>
+        ))
+    )}
             </div>
         </div>
+        <ToastContainer
+        position="top-left"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </div>
   )
 }

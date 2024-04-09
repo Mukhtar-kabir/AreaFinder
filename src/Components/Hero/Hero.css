@@ -202,8 +202,14 @@
         width: 100%;
     }
 
+    .hero .items::before {
+        top: 1rem;
+    }
+
     .hero .hero-container {
         width: 100%;
+        top: 0;
+        z-index: 0;
     }
 
     .hero .hero-container h1 {

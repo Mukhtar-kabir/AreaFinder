@@ -1,6 +1,19 @@
 .review .back {
   background-color: #dfe7ff;
   padding: 1rem;
+  overflow: hidden;
+}
+
+.review .noReview {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review .noReview .delete {
+  font-size: 5rem;
+  color: #3366FF;
 }
 
 .review .input {
@@ -83,8 +96,12 @@
     margin-top: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background: none;
+    gap: 0.5rem;
+
+    overflow-x: auto;  
+    white-space: nowrap;  
+    max-height: 100px; 
 }
 
 .review  .mini-buttons button {
@@ -311,6 +328,10 @@
   }
   
 @media (max-width: 900px) {
+  .review .noReview .delete  {
+    font-size: 3rem;
+  }
+
   .review .input {
     left: 50%;
     right: 30%;
@@ -345,7 +366,7 @@
 
   .review  .mini-buttons {
     padding: 0.1rem;
-    display: none;
+    /* display: none; */
   }
 
   .modal-content h4 {
